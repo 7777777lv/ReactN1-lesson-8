@@ -1,0 +1,586 @@
+@font-face {
+  font-family: Pt Sans;
+  src: url(./fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url(./fonts/PlayfairDisplaySC-Bold.ttf);
+}
+
+@font-face {
+  font-family: Post No Bills Jaffna;
+  src: url(./fonts/PostNoBillsJaffna-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Pt Sans;
+}
+
+.container {
+  /* 1920-2*405+2*20=1150 */
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header,
+main {
+  background-color: black;
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
+.head-title-left {
+  display: flex;
+  align-items: center;
+}
+
+.head-title-left svg:hover path {
+  fill: white;
+}
+
+.head-title-left ul {
+  display: flex;
+}
+
+.head-title-left li {
+  margin: 0 10px;
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.head-title-left ul a {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.head-title-left ul span {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.head-title-right {
+  display: flex;
+  align-items: center;
+}
+
+.head-title-right svg:hover path {
+  fill: white;
+}
+
+.head-title-right-register {
+  margin-left: 10px;
+  margin-bottom: 3px;
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #969696;
+}
+
+nav {
+  background-color: #0f0f0f;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+.nav-left h2 {
+  font-family: Post No Bills Jaffna;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.nav-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right ul {
+  display: flex;
+}
+.nav-right li {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  /* border-radius: 15px; */
+}
+.nav-right li a {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #969696;
+  transition: 0.3s;
+}
+
+.nav-right svg {
+  margin-left: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+.nav-right li:hover {
+  box-shadow: inset 0px -30px 5px #1f1f1f, inset 0px 30px 5px #1f1f1f,
+    inset 15px 0px 5px #1f1f1f, inset -15px 0px 5px #1f1f1f;
+  border: none;
+}
+.nav-right li:hover a {
+  color: white;
+}
+
+#home {
+  width: 100%;
+  /* margin: 0 auto; */
+  background: url(./images/home.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0px 93px;
+}
+
+.porten-box {
+  border: 4px solid white;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.porten-box h1 {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.line {
+  width: 179px;
+  background-color: white;
+  height: 2px;
+  margin-top: -10px;
+}
+.porten-box h3 {
+  margin-top: 5px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.porten-content {
+    margin-top: 80px;
+}
+.porten-content p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#sezon {
+  display: flex;
+  width: 1519px;
+  margin: 0 auto;
+}
+
+.sezon2020 {
+  width: 50%;
+  padding-top: 57px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sezon2020 h2 {
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sezon-line {
+  margin-top: 20px;
+  width: 100px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.sezon2020-card-block {
+  margin-top: 40px;
+  display: flex;
+  gap: 45px;
+}
+.sezon2020-soat img {
+  width: 130px;
+}
+.sezon2020-soat {
+  background-color: #191b1c;
+  padding: 55px 21px;
+}
+.sezon2020-cards-1p {
+  margin-top: 25px;
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.sezon2020-cards-2p {
+  margin-top: 7px;
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 21px;
+  color: #d0d0d0;
+}
+.krutoy-brat {
+  width: 50%;
+  background-image: url(./images/krutoy-brat.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.kolleksiya {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 320px;
+}
+.kolleksiya h2 {
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.kolleksiya-line {
+  width: 130px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.kolleksiya a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  width: 138px;
+  height: 47px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.kolleksiya a:hover {
+  box-shadow: inset 138px 0px 5px #969696;
+    /* border: #969696; */
+}
+#section3 {
+  display: flex;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.section3-left {
+  width: 50%;
+  background-image: url(./images/section3-left.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section3-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section3-right h3 {
+  margin-top: 60px;
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.section3-right-line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 120px;
+  background-color: #fff;
+  height: 1px;
+}
+.section3-right p {
+  font-family: Pt Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+.section3-right a {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 311px;
+  height: 47px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.section3-right a:hover {
+  box-shadow: inset 311px 0 5px #1f1f1f;
+}
+#section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section4 h1 {
+  margin-top: 120px;
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section4-line {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 120px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.section4-card-block {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section4-cards-soat {
+  background-color: #191b1c;
+  padding: 55px 21px;
+}
+
+footer {
+  background-color: #0f0f0f;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  padding-top: 60px;
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-line {
+  margin-top: 40px;
+  border: 1px solid white;
+  background-color: #fff;
+  width: 120px;
+}
+
+.footer-logos {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1519px) {
+  #home {
+    background-size: 100%;
+    padding: 0;
+  }
+  .porten-box {
+    margin-top: 100px;
+    width: 230px;
+    height: 230px;
+  }
+  #sezon {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .sezon2020 {
+    width: 100%;
+  }
+  .sezon2020-card-block {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .sezon2020-cards {
+    text-align: center;
+  }
+  .sezon2020-cards br {
+    display: none;
+  }
+  .sezon2020-soat img {
+    width: 199px;
+  } 
+  .krutoy-brat {
+    margin-top: 50px;
+    width: 960px;
+    height: 730px;
+    padding: 400px 0 0px;
+  }
+  .kolleksiya {
+    margin: 0;
+  }
+  #section3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .section3-left {
+    margin-top: 100px;
+    width: 960px;
+    height: 600px;
+  }
+  .section3-right {
+    width: 100%;
+  }
+  .sc4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section4-card-block {
+    justify-content: center;
+  }
+  .footer-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 755px) {
+  .nav-right {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 680px) {
+  .head-title-right-register {
+    display: none;
+  }
+  .head-title-right svg {
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+  }
+}
